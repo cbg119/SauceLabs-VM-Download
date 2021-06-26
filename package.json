@@ -1,0 +1,28 @@
+{
+  "name": "saucelabs-vm-download",
+  "version": "1.0.0",
+  "description": "This repository is a proof-of-concept of \"downloading\" a file from a Sauce Labs test VM.",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio wdio.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbg119/SauceLabs-VM-Download.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cbg119/SauceLabs-VM-Download/issues"
+  },
+  "homepage": "https://github.com/cbg119/SauceLabs-VM-Download#readme",
+  "dependencies": {
+    "@wdio/cli": "^7.7.4"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^7.7.4",
+    "@wdio/mocha-framework": "^7.7.4",
+    "@wdio/sauce-service": "^7.7.4",
+    "@wdio/spec-reporter": "^7.7.3"
+  }
+}
