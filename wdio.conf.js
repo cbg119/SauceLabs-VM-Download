@@ -61,27 +61,34 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
-    capabilities: [{
+    capabilities: [
+        {
     
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 5,
+        maxInstances: 10,
         //
         browserName: 'chrome',
         browserVersion: "latest",
         platformName: "macOS 11",
+        "sauce:options": {
+            "build": "Size Download"
+        }
+        /*
         "sauce:options": {
             "prerun": {
                 "executable": "https://gist.githubusercontent.com/cbg119/d53cda8e1665d64e456b7d6e760572ea/raw/fced3f7809a711848d6b722ff0b21d9bae6b1fdc/download_prerun.sh",
                 "background": "true"
             }
         }
+        */
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
-    }],
+    },
+],
     //
     // ===================
     // Test Configurations
